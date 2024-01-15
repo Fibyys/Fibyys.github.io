@@ -1,0 +1,238 @@
+*{
+    color:white;
+    margin:0px;
+    padding:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+body{
+    background-color: hsl(0, 0%, 5%);
+    overflow-x: hidden;
+}
+
+
+ul{
+    list-style-type: none;
+    width: 100%;
+    background-color: hsl(0, 0%, 5%);
+    animation-name: FadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    
+    
+    
+}
+
+li{
+    display: inline;
+    
+}
+
+
+a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 5%);
+    border-radius: 100px;
+    font-weight: bold;
+    margin-left:5px;
+    margin-right:5px;
+    -webkit-transition: 0.5s
+
+}
+
+a:hover{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 5px 5px hsl(0, 0%, 100%);
+    transition: ease-in-out;
+    transition: 0.5s;
+    color:black;
+}
+
+.navigation{
+    position: relative;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+.title{
+    display: block;
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    animation: FadeIn 2s ease-in;
+}
+
+.texty{
+    display: block;
+    padding: 8px;
+    text-align: center;
+
+}
+
+#lil{
+    width:81px;
+    height:21px;
+}
+
+
+#home{
+    width:81px;
+    height:21px;
+}
+
+.intro{
+    display: block;
+    text-align: center;
+    font-size: 64px;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,300%);
+}
+
+
+.name{
+    animation: GrowIn 2s ease-in-out;
+    -webkit-transition: 0.5s;
+    letter-spacing: 0.5em;
+    font-size: 50px;
+    opacity: 0.1;
+}
+
+.name:hover{
+    text-shadow: hsl(0, 0%, 100%) 1px 0 10px;
+    transition:ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.description{
+    margin-right:20px;
+    margin-left:10px;
+    margin-bottom: 100px;
+    animation: fade-in-left 2s ease-in-out;
+}
+
+.description2{
+    position: relative;
+    text-align: end;
+    margin-left:50px;
+    margin-right:10px;
+    margin-bottom: 100px;
+    animation: fade-in-right 2s ease-in-out;
+}
+
+span{
+    color:hsl(271, 57%, 45%);
+}
+
+.python1{
+    margin-bottom: 150px;
+    animation: FadeIn 2s ease-in;
+    text-align: center;
+}
+
+
+.images{
+    height:250px;
+    width:250px;
+
+    
+}
+
+.container-img{
+    position: relative;
+    justify-content: space-evenly;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+
+}
+
+
+.container-img{
+    margin-bottom: 100px;
+}
+
+.video{
+    height:450px;
+    width:650px;
+    animation: FadeIn 2s ease-in;
+    box-sizing: 650px 650px;
+    margin-top: 50px;
+}
+
+.python2{
+    text-align: center;
+    animation: FadeIn 2s ease-in;
+}
+
+
+.unity{
+    text-align: center;
+    animation: FadeIn 2s ease-in;
+}
+
+
+
+@keyframes FadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes GrowIn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }  
+    100%{
+        transform: scale(1);
+        opacity: 0.1;
+    }
+
+}
+
+
+@keyframes letter{
+    0% { letter-spacing: 0.1em; }
+    100% {letter-spacing: 1em;}
+}
+
+
+
+
+@keyframes fade-in-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+
+
+@keyframes fade-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
